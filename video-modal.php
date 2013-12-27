@@ -8,12 +8,8 @@
  * Author URI: http://sunil.co.nz
  * License:  GPL2
  */
-
 ?>
-
-
 <?php
-
 //
 // First, lets create the custom post type
 //
@@ -68,11 +64,11 @@ function cmb_modal_scripts()
 {
   // add the jquery plugin, along with our script that uses it
 
-  wp_register_script('modaldep', get_template_directory_uri()  . "/js/jquery.simplemodal-1.4.4.js" , array('jquery') ) ;
-  wp_enqueue_script('modaldep', get_template_directory_uri() . "/js/jquery.simplemodal-1.4.4.js" , array('jquery') ) ;
+  wp_register_script('modaldep', plugins_url()  . "/video-modals/js/jquery.simplemodal-1.4.4.js" , array('jquery') ) ;
+  wp_enqueue_script('modaldep', plugins_url() . "/video-modals/js/jquery.simplemodal-1.4.4.js" , array('jquery') ) ;
 
-  wp_register_script('cmbmodal', get_template_directory_uri()  . "/js/cmbmodal.js" , array('jquery', 'modaldep') ) ;
-  wp_enqueue_script('cmbmodal', get_template_directory_uri() . "/js/cmbmodal.js" , array('jquery', 'modaldep') ) ;
+  wp_register_script('cmbmodal', plugins_url() . "/video-modals/js/cmbmodal.js" , array('jquery', 'modaldep') ) ;
+  wp_enqueue_script('cmbmodal', plugins_url() . "/video-modals/js/cmbmodal.js" , array('jquery', 'modaldep') ) ;
 
 } ;
 
@@ -140,8 +136,8 @@ add_shortcode( 'publish_modals', 'publish_modals_func' );
 // now with that out of the way, we can add our styles
 //
 function register_video_modal_styles(){
-  wp_enqueue_style( 'video_style',  plugins_url() . '/video-modals/css/videos.css' );
-  wp_enqueue_script( 'video_style', dirname(__FILE__) . '/css/videos.css' );
+  wp_enqueue_style( 'video_style',  plugins_url() . '/video-modals/css/videos.css' ) ;
+  wp_enqueue_script( 'video_style', plugins_url() . '/video-modals/css/videos.css' ) ;
   
 }
 add_action( 'wp_enqueue_scripts', 'register_video_modal_styles') ;

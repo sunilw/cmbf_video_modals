@@ -61,7 +61,7 @@ endif;
                class="modal-window"
                >
         <div class="modal-close">
-          <img src="<?php echo get_template_directory_uri()  ?>/img/x.png" class="" alt="click to close modal" />
+          <img src="<?php echo plugins_url()  ?>/video-modals/img/x.png" class="" alt="click to close modal" />
         </div>
         <h3><?php echo  get_post_meta($post->ID, '_cmb_video_title', true) ?> </h3>
         <div>
