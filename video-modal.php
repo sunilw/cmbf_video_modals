@@ -131,17 +131,13 @@ add_filter( 'cmb_meta_boxes', 'be_sample_metaboxes' );
 //
 // ok. Now lets output our videos using a shortcode
 //
-
 function publish_modals_func(){
-
- 
-  include( dirname(__FILE__) . '/templates/covers-markup.php') ;
-
-
+   include( dirname(__FILE__) . '/templates/covers-markup.php') ;
 } // ends publish_modals_func
-
-
 add_shortcode( 'publish_modals', 'publish_modals_func' );
+
+// now with that out of the way, we can add our styles
+
 
 
 ?>
