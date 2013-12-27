@@ -14,8 +14,13 @@ Add the iframe embed code.
 
 ----
 
-Add a mechanism for inserting the code with a page or post.
-A shortcode is probably best.
+Shorcode:
+[publish_modals]
+
+This will publish two things: a visible gallery of your cover
+images. And an invisible div containing our modals.
+
+Also, you get access to a minimal stylesheet for the modals.
 
 ----
 
@@ -24,3 +29,8 @@ When the plugin is active and you have created videos...
 ... you will be able to click video covers and have a modal containing
 the video pop up.
 
+---
+
+todo
+
+Many, many things. 
