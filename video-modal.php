@@ -136,8 +136,12 @@ function publish_modals_func(){
 } // ends publish_modals_func
 add_shortcode( 'publish_modals', 'publish_modals_func' );
 
+//
 // now with that out of the way, we can add our styles
-
-
-
-?>
+//
+function register_video_modal_styles(){
+  wp_enqueue_style( 'video_style',  plugins_url() . '/video-modals/css/videos.css' );
+  wp_enqueue_script( 'video_style', dirname(__FILE__) . '/css/videos.css' );
+  
+}
+add_action( 'wp_enqueue_scripts', 'register_video_modal_styles') ;
