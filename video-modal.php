@@ -6,7 +6,8 @@
  * Version: 0.1
  * Author: Sunil Williams
  * Author URI: http://sunil.co.nz
- * License:  GPL2
+ *
+ * License:  GPLv2
  */
 ?>
 <?php
