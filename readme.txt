@@ -4,7 +4,7 @@ Author: Sunil Williams
 Author URI: http://sunil.co.nz
 Tags: youtube, modals, modal windows
 Tested up to: 3.8
-License: GPLv2 q
+License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Youtube video links with modal windows
 
